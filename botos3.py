@@ -23,11 +23,7 @@ try:
         ExpectedBucketOwner='890742598563'
     )
 
-    #response = client.get_bucket_ownership_controls(
-     #    Bucket=bucket_name,
-         #ExpectedBucketOwner='026090548174'
-    #)
-    print("Bucket created successfully:", response)
+       print("Bucket created successfully:", response)
 except :
     print("Error creating bucket:")
 
