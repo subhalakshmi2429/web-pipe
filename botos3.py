@@ -3,9 +3,9 @@ import os
 import requests
 
 # Get the AWS credentials and region from environment variables
-AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID', 'Default Value')
-AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY', 'Default Value')
-AWS_DEFAULT_REGION = os.getenv('AWS_DEFAULT_REGION', 'Default Value')
+AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID','Default Value')
+AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY','Default Value')
+AWS_DEFAULT_REGION = os.getenv('AWS_DEFAULT_REGION','Default Value')
 
 # Initialize the S3 client
 client = boto3.client('s3', 
