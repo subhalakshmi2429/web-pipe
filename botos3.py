@@ -10,7 +10,7 @@ AWS_DEFAULT_REGION = os.getenv('AWS_DEFAULT_REGION', 'Default Value')
 client = boto3.client('s3')
 
 try:
-    bucket_name = "boto-bucky"
+    bucket_name = "suba-bucket"
     # Create the S3 bucket
     response = client.create_bucket(
         Bucket=bucket_name,
